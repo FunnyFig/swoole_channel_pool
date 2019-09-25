@@ -1,0 +1,23 @@
+{
+    "name": "funnyfig/swoole_channel_pool",
+    "description": "simple swoole channel pool",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": ["swoole", "channel", "pool"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yoo, Taihyung",
+            "email": "th.yoo@brainboot.kr"
+        }
+    ],
+    "require": {
+	    "php": ">=7.1",
+	    "ext-swoole": ">=4.4.2"
+    },
+    "autoload": {
+	    "psr-4": {
+		    "FunnyFig\\Swoole\\": "."
+	    }
+    }
+}
