@@ -37,12 +37,12 @@ class ChannelPool {
 		}
 	}
 
-	function get() : Swoole\Coroutine\Channel
+	function get() : chan
 	{
 		return $this->pool->pop();
 	}
 
-	function put(Swoole\Coroutine\Channel $chan)
+	function put(chan $chan)
 	{
 		return $this->pool->push($chan);
 	}
